@@ -3,7 +3,7 @@ services:
   # DBの設定
   db:
     # コンテナ名の指定
-    container_name: sample_app_db
+    container_name: awesome_events_db
     # 2022年7月時点の最新版PostgreSQL
     image: postgres:14.4
     # 環境変数の設定（db.envから読み込む）
@@ -15,7 +15,7 @@ services:
   # アプリの設定
   web:
     # コンテナ名の指定
-    container_name: sample_app_web
+    container_name: awesome_events_web
     # Dockerfileのあるディレクトリパスを指定
     build: .
     # 環境変数の設定（db.envから読み込む）
